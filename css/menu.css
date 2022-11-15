@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+.title{
+  height: 310px;
+  background-image: url("../images/menu/menu-main.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(92, 61, 24);
+  text-shadow: 5px 5px 10px #ffffff;
+}
+.title h1{
+  font-family: 'Montserrat';
+  font-size: 32px;
+  font-weight: bold;
+}
+.title p{
+  font-size:14px;
+  margin-top: 15px;
+}
+.dish-list{
+  width:930px;
+  max-width: 90%;
+  margin-top: 75px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,240px);
+  column-gap: 95px;
+  row-gap: 70px;
+  justify-content: center;
+}
+.dish-list dl{
+  margin-top: 20px;
+}
+.dish-list dt{
+  font-weight: bold;
+}
+.dish-list dd{
+  font-size: 13px;
+  line-height: 20px;
+  margin-top: 10px;
+}
+.dish-list li{
+  position: relative;
+}
+.dish-list .menu-label{
+  position: absolute;
+  top:0;
+  left: calc(100% + 18px);
+  font-size: 12px;
+  white-space:nowrap;
+  transform-origin: top left;
+  transform: rotate(90deg);
+}
+.footer{
+  margin-top: 100px;
+}
+@media screen and (max-width:800px){
+  .dish-list {
+    margin-top: 45px;
+    row-gap: 40px;
+  }
+}
